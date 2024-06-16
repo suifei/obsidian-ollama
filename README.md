@@ -1,5 +1,18 @@
 # 🦙 Obsidian Ollama
 
+增加中文命令：
+
+- 总结选定内容
+- 解释选定内容
+- 扩展选定内容
+- 重写选定内容（正式）
+- 重写选定内容（非正式）
+- 重写选定内容（主动语态）
+- 重写选定内容（项目符号）
+- 为选定内容添加标题
+
+---
+
 This is a plugin for [Obsidian](https://obsidian.md) that allows you to use [Ollama](https://ollama.ai) within your notes.
 There are different pre configured promts:
 
