@@ -2,47 +2,47 @@ import { OllamaSettings } from "model/OllamaSettings";
 
 export const DEFAULT_SETTINGS: OllamaSettings = {
   ollamaUrl: "http://localhost:11434",
-  defaultModel: "llama2",
-  commands: [
+  defaultModel: "llama3:zh_8b",
+  commands:[
     {
-      name: "Summarize selection",
-      prompt:
-        "Act as a writer. Summarize the text in a view sentences highlighting the key takeaways. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "name": "总结选定内容",
+      "prompt": "扮演作家的角色。总结文本的关键内容。只输出文本，不要聊天，不要开场白，直奔主题。",
+      "model": "llama3:zh_8b"
     },
     {
-      name: "Explain selection",
-      prompt:
-        "Act as a writer. Explain the text in simple and concise terms keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "name": "解释选定内容",
+      "prompt": "扮演作家的角色。用简洁明了的语言解释文本，保持原意。只输出文本，不要聊天，不要开场白，直奔主题。",
+      "model": "llama3:zh_8b"
     },
     {
-      name: "Expand selection",
-      prompt:
-        "Act as a writer. Expand the text by adding more details while keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "name": "扩展选定内容",
+      "prompt": "扮演作家的角色。通过添加更多细节来扩展文本，保持原意。只输出文本，不要聊天，不要开场白，直奔主题。",
+      "model": "llama3:zh_8b"
     },
     {
-      name: "Rewrite selection (formal)",
-      prompt:
-        "Act as a writer. Rewrite the text in a more formal style while keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "name": "重写选定内容（正式）",
+      "prompt": "扮演作家的角色。以更正式的风格重写文本，保持原意。只输出文本，不要聊天，不要开场白，直奔主题。",
+      "model": "llama3:zh_8b"
     },
     {
-      name: "Rewrite selection (casual)",
-      prompt:
-        "Act as a writer. Rewrite the text in a more casual style while keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "name": "重写选定内容（非正式）",
+      "prompt": "扮演作家的角色。以更随意的风格重写文本，保持原意。只输出文本，不要聊天，不要开场白，直奔主题。",
+      "model": "llama3:zh_8b"
     },
     {
-      name: "Rewrite selection (active voice)",
-      prompt:
-        "Act as a writer. Rewrite the text in with an active voice while keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "name": "重写选定内容（主动语态）",
+      "prompt": "扮演作家的角色。以主动语态重写文本，保持原意。只输出文本，不要聊天，不要开场白，直奔主题。",
+      "model": "llama3:zh_8b"
     },
     {
-      name: "Rewrite selection (bullet points)",
-      prompt:
-        "Act as a writer. Rewrite the text into bullet points while keeping the same meaning. Output only the text and nothing else, do not chat, no preamble, get to the point.",
+      "name": "重写选定内容（项目符号）",
+      "prompt": "扮演作家的角色。将文本重写为项目符号，保持原意。只输出文本，不要聊天，不要开场白，直奔主题。",
+      "model": "llama3:zh_8b"
     },
     {
-      name: "Caption selection",
-      prompt:
-        "Act as a writer. Create only one single heading for the whole text that is giving a good understanding of what the reader can expect. Output only the caption and nothing else, do not chat, no preamble, get to the point. Your format should be ## Caption.",
-    },
+      "name": "为选定内容添加标题",
+      "prompt": "扮演作家的角色。为整个文本创建一个标题，让读者能够很好地理解内容。只输出标题，不要聊天，不要开场白，直奔主题。你的格式应该是## 标题。",
+      "model": "llama3:zh_8b"
+    }
   ],
 };
